@@ -1,0 +1,50 @@
+{
+  "global": {
+    "anti-defensive-writing": {
+      "type": "skill",
+      "description": "论文写作/润色/压缩、回复审稿意见（rebuttal）、研究方案（protocol）写作时防防御性写作：把稿件当学术发布会（press conference），先定住最值得发表的核心贡献，全篇叙事围绕它；不写实验流水账、不平均用力、不主动罗列弱点、不替审稿人先攻击自己；删姿态性 hedge、disclaimer、自我审计式表述（unfortunately / it should be noted that / this study has several limitations 一类）；CHEERS 等规范强制的披露保留，但写成肯定式范围陈述；事实撑住的不加软化词，撑不住的不放大。",
+      "success_count": 1
+    },
+    "citation-integrity-check": {
+      "type": "skill",
+      "description": "引用真伪与支持度核查：每条参考文献是否真实存在（DOI/ PubMed 双源核验）、字段是否张冠李戴（嵌合引用检测）、是否被撤稿/更正、正文声称是否真被引文支撑（五档支持度判定，定位到引文页段）。查参考文献真伪、可疑引用、DOI 核对、BibTeX 清理、引用对不上正文声称、投稿前引用完整性核查时用。红线：不发明任何引用字段；网络查不到≠文献不存在；引用编号格式问题走 nma-manuscript-audit，本技能管真伪与语义支持。",
+      "success_count": 1
+    },
+    "claim-safety-gates": {
+      "type": "skill",
+      "description": "回复审稿意见/写声称时的三道门：不伪造、不过度承诺、全覆盖；地基红线：不臆造文献/数据/DOI/端点，已验证与推测严格分开",
+      "success_count": 1
+    },
+    "code-review-beyond-diff": {
+      "type": "skill",
+      "description": "代码审查视角：看改动波及的未改文件，按 must/should/nice 排序，shortcut 注释收成账本",
+      "success_count": 1
+    },
+    "figure-creation-standards": {
+      "type": "skill",
+      "description": "出图前先定规范：期刊尺寸（Nature 89/183mm、Science 5.7/12.1/18.4cm、Cell Press 8.5/11.4/17.4cm）、色盲安全配色（Okabe-Ito / Paul Tol 精确 hex）、导出标准（矢量优先、300dpi 底线、字体嵌入）、诚实编码（条形图含零基线、不确定性命名、缺失数据显式、双轴警告）。画图/作图/出图/投稿 figure/设置图尺寸/选配色/ggsave 导出时用；与 figure-review-gate 配成前后半场：本技能管出图时守的规范，渲染后终检走 figure-review-gate。",
+      "success_count": 1
+    },
+    "figure-review-gate": {
+      "type": "skill",
+      "description": "投稿图渲染后的终检门：看 PDF 不看预览，查字号/线宽/碰撞/图注自足；视觉诚实：零基线/无双轴伪相关/不 jet 色板/不显著不当主图",
+      "success_count": 1
+    },
+    "minimal-code-ladder": {
+      "type": "skill",
+      "description": "写或改代码前按阶梯停在第一层成立的方案，硬边界不砍；用于压掉过度设计",
+      "success_count": 1
+    },
+    "paper-claim-audit": {
+      "type": "skill",
+      "description": "用一个没有上下文的审查者逐数字比对论文与原始结果文件，抓四舍五入/挑 seed/配置不符/范围过度声称",
+      "success_count": 1
+    },
+    "review-rebuttal": {
+      "type": "skill",
+      "description": "审稿意见回复的流程编排：意见登记（原话逐字保留）→ 原子化分诊（一条一个独立要求，归因+策略五选一）→ 逐点绑定证据与修改定位 → 新实验请求门（分类+可行性+用户授权）→ 承诺台账（防\"说了没做\"）→ 响应信成文。收到审稿意见、大修/小修（major/minor revision）、写 response letter / rebuttal / 逐条回复、返修交稿前核查时用。事实纪律走 claim-safety-gates 三道门，写作姿态走 anti-defensive-writing，本技能只管流程编排与承诺真实性。",
+      "success_count": 1
+    }
+  },
+  "projects": {}
+}
