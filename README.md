@@ -1,5 +1,7 @@
 # XSkill
 
+**English** | [中文](./README_CN.md)
+
 **Zero-dependency, two-tier shared knowledge & skill hub for multi-agent workflows — exposed over standard MCP.**
 
 XSkill lets multiple AI coding & research agents (Claude Code, Codex, Cursor, OpenCode, Gemini CLI, etc.) share a single source of truth for **Skills** (reusable workflows) and **Experiences** (contextual decision rules) without duplicating files across tools.
